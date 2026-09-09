@@ -1,0 +1,13 @@
+# Installed dependencies and generated bundle
+/node_modules/
+/dist/
+
+# Local logs and editor/OS files
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.zed/
+*.swp
+*.swo

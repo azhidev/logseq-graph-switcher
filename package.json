@@ -1,0 +1,23 @@
+{
+  "name": "logseq-hold-to-switch-graphs",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Hold Ctrl, cycle graphs with Tab, and release Ctrl to switch using Logseq's native chooser.",
+  "type": "module",
+  "main": "index.html",
+  "scripts": {
+    "build": "esbuild src/index.js --bundle --format=iife --platform=browser --outfile=dist/index.js",
+    "test": "node --test src/switcher.test.js",
+    "test:browser": "node scripts/validate_graph_switcher.cjs"
+  },
+  "dependencies": {
+    "@logseq/libs": "0.0.17"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  },
+  "logseq": {
+    "id": "hold-to-switch-graphs",
+    "title": "Hold to Switch Graphs"
+  }
+}
